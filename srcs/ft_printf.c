@@ -25,6 +25,8 @@ int ft_printf(const char *str, ...)
 	int i = 0;
 	int l = 0;
 	va_list ar;
+	if (!str)
+		return (-1);
 	va_start(ar, str);
 	while (str[i])
 	{
